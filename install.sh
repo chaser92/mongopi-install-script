@@ -11,6 +11,7 @@ mkdir -p /var/lib/mongodb/ &&
 chown mongodb:nogroup /var/log/mongodb/ &&
 chown mongodb:nogroup /var/lib/mongodb/ &&
 curl -o /etc/init.d/mongod https://raw.githubusercontent.com/chaser92/mongopi-install-script/master/mongod &&
+chmod a+x /etc/init.d/mongod &&
 curl -o /etc/mongodb.conf https://raw.githubusercontent.com/chaser92/mongopi-install-script/master/mongodb.conf &&
 /etc/init.d/mongod start &&
 echo MongoDB has been installed succesfully!
