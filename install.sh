@@ -14,4 +14,5 @@ curl -o /etc/init.d/mongod https://raw.githubusercontent.com/chaser92/mongopi-in
 chmod a+x /etc/init.d/mongod &&
 curl -o /etc/mongodb.conf https://raw.githubusercontent.com/chaser92/mongopi-install-script/master/mongodb.conf &&
 /etc/init.d/mongod start &&
+update-rc.d mongod defaults &&
 echo MongoDB has been installed succesfully!
